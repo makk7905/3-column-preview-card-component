@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution{
+    text-align: center;
+    margin: auto;
+}
+
+
+
+body{
+    margin: 0;
+    background-color: rgb(245, 238, 238);
+}
+
+.container{
+    margin: auto;
+    font-size: 15px;
+    
+    flex-direction:row;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-family: Lexend Deca;
+    line-height: 1.8em;
+    font-weight: 300;
+    color: rgb(224, 219, 219);
+    text-align: left;;
+}
+
+
+.boxes{
+    padding: 40px;
+    max-width: 400px;
+    margin: auto;
+    color: #fff;
+}
+
+
+
+#sec-1{
+    flex: 1;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+
+#sec-2{
+    flex: 1;
+    background-color: hsl(184, 100%, 22%);
+}
+
+#sec-3{
+    flex: 1;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+
+.btns{
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    font-size: 14px;
+    padding: 14px 20px;
+    font-family: Lexend Deca;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.btns:hover{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+
+}
+
+.sed-btn{
+    color:hsl(31, 77%, 52%);
+}
+
+.suv-btn{
+    color:hsl(184, 100%, 22%);
+}
+
+.lux-btn{
+    color:hsl(179, 100%, 13%);
+}
+
+.imgs{
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 700px){
+    .container{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       max-width: 850px;
+       margin: auto;
+    }
+
+    #sec-1{
+       
+       
+        border-radius:  10px 0 0 10px;
+    }
+    
+    #sec-3{
+        
+        border-radius: 0 10px 10px 0;
+    }
+
+    .boxes{
+        padding: 40px 60px 40px 50px;
+    }
+}
+
